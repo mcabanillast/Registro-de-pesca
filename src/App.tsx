@@ -30,6 +30,7 @@ const effortx: EffortData = {
   lan_hr_ini: "",
   lan_hr_fin: "",
   nro_anz: "",
+  nro_samb: "",
   temp: "",
   prof: "",
   lan_lat_ini: "",
@@ -302,6 +303,7 @@ const App: React.FC<{}> = () => {
       formDataToSend.append("lan_hr_ini", formData.efforts[i].lan_hr_ini);
       formDataToSend.append("lan_hr_fin", formData.efforts[i].lan_hr_fin);
       formDataToSend.append("nro_anz", formData.efforts[i].nro_anz);
+      formDataToSend.append("nro_samb", formData.efforts[i].nro_samb);
       formDataToSend.append("temp", formData.efforts[i].temp);
       formDataToSend.append("prof", formData.efforts[i].prof);
       formDataToSend.append("lan_lat_ini", formData.efforts[i].lan_lat_ini);
@@ -409,6 +411,7 @@ const App: React.FC<{}> = () => {
       formDataToSend.delete("lan_hr_ini");
       formDataToSend.delete("lan_hr_fin");
       formDataToSend.delete("nro_anz");
+      formDataToSend.delete("nro_samb");
       formDataToSend.delete("temp");
       formDataToSend.delete("prof");
       formDataToSend.delete("lan_lat_ini");

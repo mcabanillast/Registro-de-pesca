@@ -136,12 +136,15 @@ const EffortSection: React.FC<IEffortSection> = (props) => {
       <div className="row">
         <div className="col-4">Profundidade dos anzóis (m)</div>
         <div className="col-4">
-          <input
-            type="number"
+          <select
             name="prof"
             value={props.formData.efforts[props.i].prof}
             onChange={(e) => props.handleEffortChange(e, props.i)}
-          />
+          >
+            <option value=""></option>
+            <option value="profunda">Largada profunda</option>
+            <option value="superficial">Largada superficial</option>
+          </select>
         </div>
         <div className="col-4">
           <input
@@ -218,6 +221,22 @@ const EffortSection: React.FC<IEffortSection> = (props) => {
           />
         </div>
       </div>
+      <div className="row">
+        <div className="col-4">Tipo de estropo ou ponteira</div>
+        <div className="col-4">
+          <select
+            name="nro_samb"
+            value={props.formData.efforts[props.i].nro_samb}
+            onChange={(e) => props.handleEffortChange(e, props.i)}
+          >
+           <option value=""></option>
+           <option value="aço">Aço</option>
+           <option value="nylon">Nylon</option>
+           <option value="ambos">Ambos</option>
+           <option value="outro">Outro</option>
+         </select>
+        </div>
+        </div>
       <div className="row">
         <div className="col-4">Light-Stick</div>
         <div className="col-4">

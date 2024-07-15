@@ -4,6 +4,7 @@ export interface EffortData {
   lan_hr_ini: string;
   lan_hr_fin: string;
   nro_anz: string;
+  nro_samb: string;
   temp: string;
   prof: string;
   lan_lat_ini: string;
